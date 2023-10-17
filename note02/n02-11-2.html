@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>플렉스 응용(wrap,self)</title>
+    <style>
+        container{
+            width:300px;
+            height:400px;
+            border:5px solid #000;
+            display:flex;
+            flex-wrap:wrap
+/*                부모의 틀을 넘을 경우 넘지 않겠다는 뜻*/
+        }
+        div{
+            background-color:palevioletred;
+            width:98px;
+            height:98px;
+            border:1px solid #fff
+        }
+        .ck{
+            align-self:flex-end;
+/*            1개만 바꾸겠다면 self라는 내용이 들어가야함*/
+        }
+    </style>
+
+</head>
+<body>
+    <container>
+        <div>1</div>
+        <div class="ck">2</div>
+        <div>3</div>
+        <div>4</div>
+        <div class="ck">5</div>
+        <div>6</div>
+    </container>
+</body>
+</html>

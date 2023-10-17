@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+    input[type="text"]{
+    background:red;}
+    input[type="password"]{
+    background:skyblue;}   
+/*        #header H1{color : pink}*/
+/*        #section H1{color:orange}*/
+        #header > H1{color : pink}
+        #header > H1:active{color : mediumpurple}
+        #section > H1{color:orange}
+        input:enabled{
+            background-color: white;
+        }
+        input:disabled{
+            background-color: gray;
+        }
+        input:focus{
+            background-color: orange;
+        }
+        
+    </style>
+</head>
+<body>
+    <input type="text" name=""><br>
+    <input type="text" name="" value="enabled"/><br>
+    <input type="text" name="" value="disabled"/><br>
+    <input value="enabled" disabled="disabled"/><br>
+    <input type="password" name="" id="">
+    <hr>
+    <div id="header">
+        <H1>Header</H1>
+        <H2>Header</H2>
+        
+    </div>
+    <div id="section">
+        <H1>Section</H1>
+        <H2>Section</H2>
+    </div>
+    같은 H1 태그라도 영역이 어디냐에 따라 다른 값을 작용할 수 있다!
+<hr>
+ 선택자A>선택자B
+ 예시-#nav아래에 있는 H1 태그는 후손이기에 스타일이 적용되지 않음.
+ <div id="header">
+        <div><h1>Nav</h1></div>
+        &#60;div id="header"&#62;<br>
+        &#60;div&#62;&#60;h1&#62;Nav&#60;/h1&#62;&#60;/div&#62;<br>
+        &#60;/div&#62;
+    </div>
+<hr>
+
+</body>
+</html>

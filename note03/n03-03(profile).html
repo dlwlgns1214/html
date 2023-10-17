@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>P.298~311 프로필UI 구현하기</title>
+    <style>
+        body{
+            background-color: #ff9e;
+            padding-top: 8rem;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .profile{
+            width:8rem;
+            height:8rem;
+            background-image: url(myprofile.jpg);
+            background-size: 120px;
+            border-radius: 50%;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+            transform: translateY(50%);
+        }
+        
+        .banner {
+            background-image: url(134340.jpg);
+            display: flex;
+            justify-content: center;
+        }
+        
+        .card{
+            background-color: #fff;
+            max-width: 360px;
+            overflow: hidden;
+            border-radius: 2rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+        }
+        
+        .desc{
+            padding:1.5rem;
+        }
+        
+        .name{
+            text-align: center;
+            padding-top: 60px;
+        }
+        
+        .follow-btn{
+            padding: 0.2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .follow-btn button{
+            font-size: medium;
+            font-weight: bold;
+            background-color: #ffd01a;
+            border: none;
+            padding: 1rem;
+            outline: none;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        
+        .profile:hover{
+            transform: translateY(50%) scale(1.3);
+        }
+        
+        .follow-btn button:hover{
+            background-color: #efb10a;
+            transform: scale(1.1);
+        }
+    
+    
+    </style>
+</head>
+<body>
+   <div class="card">
+       <div class="banner">
+           <div class="profile"></div>
+       </div>
+       <h2 class="name">이지훈</h2>
+       <div class="follow-btn">
+           <button type="button" onclick="location.href='https://www.instagram.com/jh.1996.z/'">Follow</button>
+       </div>
+       <div class="desc">프로필을 한 번 만들어보았습니다.<br>
+       연습삼아 만들었는데 생각보다 볼만하네요?<br>
+       사진은 넣을게 없어서 예비군 갈 때 찍었던 사진을 넣었어요.
+       아무튼 그렇다고요!<br>
+    
+       </div>
+       
+   </div>
+</body>
+</html>

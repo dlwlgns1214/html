@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>표 연습2</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+/*            background-color:antiquewhite;*/
+            background-image: url(https://www.visitbusan.net/uploadImgs/files/cntnts/20191229160530047_oen);
+/*            opacity:0.5; 배경을 연하게 하는 것*/
+            color:greenyellow;
+            text-align: center
+        }
+
+        th,
+        td {
+            border: 1px solid black
+        }
+
+    </style>
+</head>
+
+<body>
+    <table>
+        <a href="../index.html">홈으로</a>
+        <tr style="height:50px">
+            <th style="width:100px">월</th>
+            <th style="width: 60px">화</th>
+            <th style="width: 60px">수</th>
+            <th style="width: 60px">목</th>
+            <th style="width:100px">금</th>
+        </tr>
+
+        <tr style="height:50px">
+            <td>햄버거</td>
+            <td colspan="3" row bgcolor="yellow">국밥</td>
+            <td rowspan="2">제육</td>
+            
+            <tr style="height:50px">
+            <td>콜라</td>
+            <td colspan="3" row>식혜</td>
+<!--            <td>제육</td>-->
+        
+        </tr>
+
+        <tr style="height:50px">
+            <td>8000</td>
+            <td colspan="3">9000</td>
+            <td>7500</td>
+            
+        </tr>
+    </table>
+
+</body>
+
+</html>

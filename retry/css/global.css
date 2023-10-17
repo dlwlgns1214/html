@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Roboto:wght@300;400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Filled");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Sharp");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Round");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Two+Tone");
+
+@import "./reset.css";
+@import "./variable.css";
+@import "./nevigation-bar.css";
+
+
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--background-purple);
+    color: white;
+}
+
+input{
+    border: none;
+    outline: none;
+    appearance:none;
+}
+
+.display-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.position-relative{
+    position: relative;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>P.227 예제12-8</title>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+            background-color: aquamarine;
+            margin:50px;
+            animation:test 3s infinite;
+        }
+        
+        @keyframes test {
+               0% {transform:rotate(0deg)}
+               15% {transform:rotate(90deg)}
+               50% {transform:rotate(180deg)}
+               95% {transform:rotate(270deg)}
+               100% {transform:rotate(360deg)}
+/*            0과 100은 from과 to로 바꿔도 무관*/
+       }    
+        }
+    </style>
+</head>
+<body>
+  
+   <div>test</div>
+    
+</body>
+</html>

@@ -1,0 +1,9 @@
+변수
+:root{
+ --var-name : red;
+}
+
+16px = 1rem = 1em
+
+<10px>
+20px =>2rem 

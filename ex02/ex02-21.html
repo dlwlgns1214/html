@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>구조적 가상 클래스</title>
+    <style>
+        p:first-child{
+            color:blue;
+        }
+        
+        p:first-child:after{
+            content:"유성";color:darkseagreen;
+        }
+        
+        p:before{
+            content: "⚡"
+        }
+        
+        p:nth-child(2){color:brown;background-color: burlywood;display:inline;}
+        
+        p:nth-last-child(4):after{content:"🍉"}
+        p:nth-last-of-type(2):after{content:" 메로나"}
+        p:last-child:after{content:". 감사합니다."}
+        
+    </style>
+</head>
+<body>
+    <p>나의 사랑</p>
+    <p>나의 취업</p>
+    <p>행복미래</p>
+    <span>=======절취선========</span>
+    <p>올 때</p>
+    <p>이제 끝</p>
+</body>
+</html>

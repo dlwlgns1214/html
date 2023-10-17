@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        html,body{
+            padding:0px;
+            margin:0px;
+            height:100%;
+        
+        }
+        
+        container{
+            height:100%;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        container div{
+            width:20%;
+            height:100%;
+            background-color:bisque;
+            margin: 5px
+/* 맨 위를 기준으로 시계방향(top, right, bottom, left)*/
+/* margin : 0px 10px -> top&bottom, left&right*/
+                
+            
+        }
+        #sub{
+            display:flex;
+            justify-content: space-between
+        }
+    </style>
+</head>
+
+<body>
+    <container>
+        <div>1</div>
+        <div>2</div>
+        <div id="sub">3</div>
+<!--            div{$@10*X}
+       10부터 X개 시작, div 안에 div를 또 넣을 수 있음!-->
+        
+        <div>4</div>
+        <div>5</div>
+    </container>
+</body>
+</html>

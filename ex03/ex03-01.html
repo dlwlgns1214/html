@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calc 사용하기</title>
+    <style>
+        html,body{
+            height: 100%;
+        }
+        
+        .rec{
+            background-color: aqua;
+            width:100px;
+            height: 100px;
+            position: relative;
+            left: calc(50% - 50px);
+/*                주의! 여백이 없으면 적용이 안 된다.*/
+            top : calc(50% - 50px);
+            
+        }
+    
+    </style>
+    
+</head>
+<body>
+    <div class="rec"></div>
+</body>
+</html>

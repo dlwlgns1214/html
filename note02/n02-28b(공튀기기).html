@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>공튀기기</title>
+    <style>
+        body{background-color: beige}
+        div {
+
+            width: 600px;
+            height: 600px;
+            margin: 20px auto;
+        }
+
+        .ball {
+            background-color: forestgreen;
+            height: 150px;
+            width: 150px;
+            margin: 50px;
+            border-radius: 50%;
+            position: absolute;
+            top: 40px;
+            left: calc(50% - 20px);
+
+            animation: bounce 1s infinite;
+        }
+
+        @keyframes bounce {
+            0% {
+                top: 80px;
+            }
+
+            50% {
+                top: 400px;
+                height: 150px;
+            }
+
+            55% {
+                top: 600px;
+                height: 150px;
+            }
+
+            65% {
+                top: 400px;
+                height: 150px;
+            }
+
+            75% {
+                top: 300px;
+                height: 150px;
+            }
+            
+            85% {
+                top: 200px;
+                height: 150px;
+            }
+            
+            
+            95% {
+                top: 100px;
+            }
+
+            100% {
+                top: 80px;
+
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+
+    
+</body></html>

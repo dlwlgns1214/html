@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flexbox 예제</title>
+    <style>
+        html,
+        body{
+            height:100%;
+        }
+        body{
+            display:flex;
+            align-items: stretch;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        div{
+/*        width:200px;*/
+            width:100px;
+            height:100px;
+            background-color: tomato;
+        }
+        #second{
+            background-color: seagreen;
+        }
+    
+    </style>
+</head>
+<body>
+    <div>1</div>
+    <div id="second">2</div>
+    <div>3</div>
+</body>
+</html>
